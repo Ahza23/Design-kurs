@@ -1,0 +1,32 @@
+<div class="footer">
+    <div>
+        <p>
+            Copyright © 2022 Ahmed  All rights reserved
+        </p>
+    </div>
+    <div class="social">
+        <!-- Loads from FontAwesome (themes/shared/fontawesome/css/font-awesome.min.css) -->
+        <!-- Loads from FontAwesome (themes/shared/fontawesome/scss/icons.scss) -->
+        {% for social in pages["_meta"].meta.social %}
+        <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+            <i class="fa fa-github" style="font-size:25px"></i>
+            <span class="sr-only">{{ social.title }}</span>
+        </a>
+        {% endfor %}
+        <a href="?action=session_destroy">Destroy Session</a>
+        <a href="?action=theme">Swap theme</a>
+        <!-- Loads from FontAwesome (themes/shared/fontawesome/css/font-awesome.min.css) -->
+        <!-- Loads from FontAwesome (themes/shared/fontawesome/scss/icons.scss) -->
+        {% for socials in pages["_meta"].meta.socials %}
+        <a href="{{ socials.url }}" title="{{ socials.title }}" role="button">
+            <i class="fa fa-instagram" style="font-size:25px"></i>
+            <span class="sr-only">{{ socials.title }}</span>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+
+<script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+<script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>

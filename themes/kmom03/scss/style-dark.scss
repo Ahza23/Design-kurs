@@ -1,0 +1,12 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'technologies';
+@import 'variables-dark';
+@import 'layout';
+@import 'blockquotes';
+@import 'code';
+@import 'base';
+
+body {
+    background-color: rgb(100, 68, 23);
+    color: rgb(255, 255, 255);
+}

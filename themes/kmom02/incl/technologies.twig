@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    <div class="title" {{ pages["_index"].index.tagline ? ' class="tagline"' }}>
+    <a href="{{ base_url }}">
+        <h1>{{ site_title }}</h1>
+        {{ pages["_index"].index.tagline|markdown }}
+    </a>
+    </div>
+
+    <div class="grid wrapper">
+    <div class="header">Header</div>
+
+    <div class="side-bar">Side-bar</div>
+    <div class="main">Main</div>
+
+    <div class="footer">Footer</div>
+    </div>
