@@ -1,11 +1,38 @@
+
+
+form {
+  width: 500px;
+  height: 250px;
+  border-left: 10px solid #000;
+  border-right: 10px solid #FFF;
+  padding: 10px 0;
+  margin: 50px auto;
+  background-image: -webkit-linear-gradient(left, #000 50%, #FFF 50%), -webkit-linear-gradient(left, #000 50%, #FFF 50%);
+  background-image: -moz-linear-gradient(left, #000 50%, #FFF 50%), -moz-linear-gradient(left, #000 50%, #FFF 50%);
+  background-image: -o-linear-gradient(left, #000 50%, #FFF 50%), -o-linear-gradient(left, #000 50%, #FFF 50%);
+  background-image: linear-gradient(to right, #000 50%, #FFF 50%), linear-gradient(to right, #000 50%, #FFF 50%);
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  background-size: 100% 10px;
+}
+
+
+
+
 .teknologi-page {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-template-rows: 250px 250px  250px;
     gap: 2em 2em;
-    padding: 1em;
+    padding: 15em;
     text-align: center;
-    margin: 0;
+    margin-inline: -100px;
+    margin-block: 0;
+    background-image: -webkit-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: -moz-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: -o-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: linear-gradient(to right, #FFF 50%, #000 50%);
+    border: solid;
 }
 
 .teknologi-page1 {
@@ -22,14 +49,14 @@
 .css {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: rgb(163, 162, 162);
+    background-color: #000;
 
 }
 
 .git {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-color: rgb(143, 143, 143);
+    background-image: linear-gradient(to right, #000 62.2%, #FFF 37.8%);
 
 
 }
@@ -37,7 +64,7 @@
 .html {
     grid-column: 4 / 6;
     grid-row: 1 / 2;
-    background-color: rgb(135, 135, 135);
+    background-color: #FFF;
 
 
 }
@@ -45,7 +72,7 @@
 .javas {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-color: rgb(108, 108, 108);
+    background-color: #000;
 
 
 }
@@ -53,7 +80,7 @@
 .php {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    background-color: rgb(93, 92, 92);
+    background-image: linear-gradient(to right, #000 62.2%, #FFF 37.8%);
 
 
 }
@@ -61,7 +88,7 @@
 .python {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
-    background-color: rgb(69, 69, 69);
+    background-color: #FFF;
 
 
 }
@@ -69,7 +96,7 @@
 .sq {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    background-color: rgb(62, 56, 56);
+    background-color: #000;
 
 }
 
@@ -85,26 +112,44 @@
 
 .color {
     color: #fff;
+
+}
+
+.color:hover{
+    text-decoration: underline;
+}
+
+
+.colorq {
+    color: #000;
+
+}
+
+.colorq:hover{
+    text-decoration: underline;
 }
 
 .names {
     grid-column: 1 / 6;
     grid-row: 1 / 2;
-    background-color: rgb(166, 129, 129);
+    background-image: linear-gradient(to right, #000 50%, #fff 50%);
 
 }
 
+span{
+    color: #000;
+}
 .csss {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-color: rgb(117, 78, 78);
+    background-color: #000;
 
 }
 
 .gits {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    background-color: rgb(81, 54, 54);
+    background-image: linear-gradient(to right, #000 72.6%, #fff 27.4%);
 
 
 }
@@ -112,23 +157,32 @@
 .htmls {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
-    background-color: rgb(85, 84, 84);
+    background-color: #fff;
 }
 
 
 .teknologie-page {
     display: grid;
-    width: 50%;
+    width: 100%;
     margin: inherit;
     gap: 10em 25em;
     padding: 5em;
     position: relative;
     text-decoration: none;
+    background-image: -webkit-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: -moz-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: -o-linear-gradient(left, #FFF 50%, #000 50%);
+    background-image: linear-gradient(to right, #FFF 50%, #000 50%);
+    border: solid;
+    
 }
+
 
 .image1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+
 
 }
 
@@ -140,25 +194,26 @@
 }
 
 .image3 {
-    grid-column: 4 / 6;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
 }
 
 .image4 {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 
 
 }
 
 .image5 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
 }
 
 .image6 {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
+
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
 }
 
 .image7 {
@@ -172,7 +227,27 @@
 }
 
 .color1 {
-    color: rgb(8, 8, 8);
+    color: #000;
+    text-decoration: none;
+}
+
+.color2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+.color1:hover{
+    text-decoration: underline 3px;
+
+}
+
+.color2:hover{
+    text-decoration: underline 3px;
+
 }
 
 .video {
@@ -193,4 +268,14 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.teknologi12{
+    display: grid;
+    width: 100%;
+    margin: inherit;
+    gap: 10em 25em;
+    padding: 6em;
+    position: relative;
+    text-decoration: none;
 }
